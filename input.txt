@@ -1,0 +1,1 @@
+http://127.0.0.1:5000/predict?area=500&rooms=3&bedrooms=5&bathrooms=5&stories=5&parking=50
