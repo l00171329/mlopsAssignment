@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 # Loading the Data as Pandas DataFrame
-df = read_csv("C:/Users/pranav/Desktop/Assignment and Data/Big Data Arch/HousingPriceData.csv")
+df = read_csv("HousingPriceData.csv")
 
 # Preprocessing the Data according to our needs
 X = df[['Area', 'Rooms', 'Bedrooms', 'Bathrooms', 'Stories', 'Parking']]
