@@ -1,8 +1,8 @@
-FROM centos:latest
+FROM ubuntu:latest
 
 # Update the package manager and install necessary dependencies
-RUN yum update -y && \
-    yum install -y gcc openssl openssl-devel bzip2-devel libffi-devel zlib-devel wget make
+RUN apt-get update && \
+    apt-get install -y gcc openssl libssl-dev libbz2-dev libffi-dev zlib1g-dev wget make
 
 # Download and install Python 3.8.12
 WORKDIR /opt
@@ -17,10 +17,12 @@ RUN pip3.8 install sklearn joblib numpy pandas scikit-learn Flask
 
 # Set the working directory for the container
 WORKDIR /mlopsAssignment
-
 # Copy your application files to the container
 COPY . /mlopsAssignment
 
 # Specify the command to run when the container starts
+
+# Specify the command to run when the container starts
 CMD ["python3.8", "FlaskApp.py"]
 EXPOSE 5000
+

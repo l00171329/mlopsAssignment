@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: flask-app-container
-          image: docker.io/l00171226/l00171226/mlops:latest
+          image: l00171329/mlopsassignment:latest
           ports:
             - containerPort: 5000
