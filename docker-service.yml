@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  myapp:
+    image: l00171222/mlopsassignment
+    ports:
+      - "5000:5000"
